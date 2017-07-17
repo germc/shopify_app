@@ -1,3 +1,7 @@
+8.0.0 (unreleased)
+------------------
+* Removed the `shopify_session_repository` initializer. The SessionRepository is now configured through the main ShopifyApp configuration object and the generated initializer
+
 7.2.11
 -----
 * Remove 'Logged in' flash message [[#425]](https://github.com/Shopify/shopify_app/pull/425)
