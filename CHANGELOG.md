@@ -1,3 +1,7 @@
+8.0.0 (unreleased)
+------------------
+* Remove ShopifySession concern. This module made the code internal to this engine harder to follow and we want do discourage over-writing the auth code now that we have generic hooks for all extra tasks during install.
+
 7.2.11
 -----
 * Remove 'Logged in' flash message [[#425]](https://github.com/Shopify/shopify_app/pull/425)
