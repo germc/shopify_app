@@ -91,7 +91,7 @@ module ShopifyApp
     def perform_after_authenticate_job
       config = ShopifyApp.configuration.after_authenticate_job
 
-      return unless config && config[:job].present? && config[:inline].present?
+      return unless config && config[:job].present? && config[:inline].in?([true, false])
 
       if config[:inline]
         config[:job].perform_now(shop_domain: session[:shopify_domain])
